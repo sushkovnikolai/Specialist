@@ -4,6 +4,6 @@
 #Напишите код, который принимает числа N и K и печатает ответ на два вышезаданных вопроса.
 n = int(input())
 k = int(input())
-r = n // k
-m = n % k
+r = k // n
+m = k % n
 print("Students' apple: ", str(r)," in basket:", str(m))
