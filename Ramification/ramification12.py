@@ -3,11 +3,11 @@
 # Напечатайте дату для следующего дня от заданного в формате день-месяц-год для текущего года.
 m = int(input())
 dey = int(input())
-ndey = (dey + 1)
-if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12 and dey == 31:
-    ndey = '1'
+if dey == 31 and m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+    print('1', m + 1, '2020', sep='-')
 elif m == 2 and dey == 28:
-    ndey = '1'
-elif m == 4 or m == 6 or m == 9 or m == 11 and dey == 30:
-    ndey = '1'
-print(ndey, m, '2020', sep = '-')
+    print('1', m + 1, '2020', sep='-')
+elif dey == 30 and m == 4 or m == 6 or m == 9 or m == 11:
+    print('1', m + 1, '2020', sep='-')
+else:
+    print(dey + 1, m + 1, '2020', sep = '-')
