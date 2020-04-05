@@ -5,8 +5,9 @@
 # чтобы пробежать общее число километров (число Y).
 x = int(input())
 y = int(input())
+z = x
 i = 1
-while x + x < y:
-    x = x + (x * 0.1)
+while z < y:
+    z += x + (x * 1.1)
     i += 1
 print(i)
